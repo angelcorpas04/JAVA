@@ -7,6 +7,7 @@ public class Condicionales {
         int numero1, numero2;
         int numEleccion;
         int numero3;
+        int min=0, max=100;
         String palabra;
 
         if (numero<5){
@@ -192,5 +193,24 @@ public class Condicionales {
             case "multiplicacion" -> System.out.println((numero1*numero2));
             default -> System.out.println("Error 404...");
         }
+
+        // Comprendido entre:
+        if (args.length != 3){
+            System.out.println("No has introducido el número de argumentos necesarios.");
+            System.out.println("Necesitamos 3 enteros: El valor mínimo, el máximo y el que queremos comprobar si está comprendido entre ellos.");
+            System.out.println("Introduce al menos el número y miro si está en el rango permitido (1 - 100)");
+            numero = sc.nextInt();
+        } else {
+            min = Integer.parseInt(args[0]);
+            max = Integer.parseInt(args[1]);
+            numero = Integer.parseInt(args[2]);
+
+            if (numero >= min && numero <= max){
+                System.out.println("El numero " + numero + " esta comprendido entre " + min + " y " + max);
+            } else {
+                System.out.println("El numero " + numero + " no esta comprendido entre " + min + " y " + max);
+            }
+        }
+
     }
 }
