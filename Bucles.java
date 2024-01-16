@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Bucles {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String palabra;
-        boolean salir = false;
+        String palabra = "";
+        int numero;
+        // boolean salir = false;
 
         // For each -> for num in listaNum:
         String[] listaAzules = {"Azul","Añil","Indigo","Cobalto","Klein","Celeste"};
@@ -42,14 +43,28 @@ public class Bucles {
             System.out.println(contador);
             contador++; 
         }
-
-        while(!salir){
+        
+        while(!palabra.equals("salir")){
             System.out.println("Escribe salir: ");
             palabra = sc.nextLine();
-            if (palabra.equals("salir")){
-                salir = true;
-            }
         }
-        
+
+        // Bucle for como while
+        // OJO -> Con los huequitos en el for...
+        for( palabra = "" ; palabra.equals("salir") ;){ 
+            System.out.println("Escribe salir: ");
+            palabra = sc.nextLine();
+        }
+
+        // Bucles doWhile
+        do{
+            System.out.println("Escribe salir: ");
+            palabra = sc.nextLine();
+        }while (!palabra.equals("salir"));
+
+        do{
+            System.out.println("Introduce un número del 1 al 50: ");
+            numero = sc.nextInt();
+        }while (numero<1 || numero>50);
     }
 }
