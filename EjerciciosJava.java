@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class EjerciciosJava {
@@ -8,12 +9,14 @@ public class EjerciciosJava {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
 
         int numero;
         int num;
         boolean esPar;
         String letraString;
         char letra;
+        int numAleatorio;
 
         // 1. Solicita por consola un número natural. Vuelve a solicitar el número hasta que efectivamente sea un número natural.
         do{
@@ -50,6 +53,17 @@ public class EjerciciosJava {
             num = (int)Math.floor(Math.random()*100);
             esPar = numeroEsPar(num);
             System.out.println("¿" + num + " es par? " + esPar);
+        }
+
+        sc.nextLine();
+
+        System.out.println("¿Cuántos números aleatorios quieres generar?: ");
+        num = sc.nextInt();
+
+        for (int i = 0 ; i < num ; i++){
+            // Generar un aleatorio entre 1 y 5 incluidos:
+            numAleatorio = (int)Math.floor(Math.random()*5)+1;
+            System.out.println("Número aleatorio " + i + ": " + numAleatorio);
         }
     }
 }
