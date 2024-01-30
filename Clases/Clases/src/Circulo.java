@@ -1,5 +1,12 @@
 // import java.util.Scanner;
 
+/**
+ * Define un círculo con su radio y su color
+ * 
+ * @author Ángel Corpas
+ * @version 1.0
+ */
+
 public class Circulo {
     
     // Atributos de la clase
@@ -26,15 +33,27 @@ public class Circulo {
     }
 
     // Get -> Conseguir la información de los atributos.
+    /**
+     * Obtener el radio actual del círculo
+     * @return El radio del círculo
+     */
     public int getRadio(){
         return this.radio;
     }
 
+    /**
+     * Obtener el color actual del círculo
+     * @return El color del círculo
+     */
     public String getColor(){
         return this.color;
     }
 
     // Set -> Establecer la información a los atributos
+    /**
+     * Establece el radio del cículo
+     * @param radio
+     */
     public void setRadio(int radio){
         this.radio = radio;
         if (radio <= 0) this.radio = radio;
