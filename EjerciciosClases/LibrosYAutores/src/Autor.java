@@ -98,9 +98,9 @@ public class Autor{
 
     public static void main (String[] args){
 
-        Libro libro1 = new Libro("Las tempestálidas","Georgi Gospodinov", 841761,2020,400);
-        Libro libro2 = new Libro("Como matar a tu familia","Bella Mackie",849129,2021,400);
-        Libro libro3 = new Libro("Oso","Marian Engel",841597,1976,168);
+        Libro libro1 = new Libro("Las tempestálidas","Georgi Gospodinov", 841761,400,2020);
+        Libro libro2 = new Libro("Como matar a tu familia","Bella Mackie",849129,400,2021);
+        Libro libro3 = new Libro("Oso","Marian Engel",841597,168,1976);
         ArrayList<Libro> listaLibros = new ArrayList<Libro>();
 
         listaLibros.add(libro1);
