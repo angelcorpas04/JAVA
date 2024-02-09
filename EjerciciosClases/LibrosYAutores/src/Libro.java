@@ -146,7 +146,7 @@ public class Libro {
     
 
     public static void main(String[] args){
-        // Prueba los dos constructores.
+        // Prueba los dos constructores
         Libro libro1 = new Libro("Las tempestálidas","Georgi Gospodinov", 841761,2020,400);
         Libro libro2 = new Libro("Como matar a tu familia","Bella Mackie",849129,2021,400);
         Libro libro3 = new Libro("Oso","Marian Engel",841597,1976,168);
@@ -154,16 +154,18 @@ public class Libro {
         System.out.println("libro1 -> " + libro1);
         System.out.println("libro2 -> " + libro2);
         System.out.println("libro3 -> " + libro3);
+
         // Prueba setNumPaginas con un valor válido.
         libro1.setNumPaginas(400);
         System.out.println("libro1 -> " + libro1);
+
         // Prueba setNumPaginas con un valor inválido.
         libro1.setNumPaginas(-200);
         System.out.println("libro1 -> " + libro1);
+
         /*// Prueba setAutor con un nombre largo.
         libro1.setAutor("Gabriel García Marquez");
         System.out.println("libro1 -> " + libro1);*/
-
         nuestroSplit("la casa verde",' ');
 
     }
