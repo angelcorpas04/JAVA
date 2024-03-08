@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.stem</groupId>
-    <artifactId>demojunit</artifactId>
+    <artifactId>nubes</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -21,6 +21,7 @@
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 </project>
