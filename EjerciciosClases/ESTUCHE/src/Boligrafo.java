@@ -47,7 +47,7 @@ public class Boligrafo {
         int numLetrasUso = 20;
         // No tenemos en cuenta que los espacios no gastan tinta.
         int numUsosTexto = (texto.length()/numLetrasUso) + 1;
-        if (this.numUsos + numUsosTexto < NUMUSOSMAX) {
+        if (this.numUsos + numUsosTexto <= NUMUSOSMAX) {
             this.numUsos += numUsosTexto;
             puedoEscribir = true;
         }
