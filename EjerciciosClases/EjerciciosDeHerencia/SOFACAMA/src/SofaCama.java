@@ -4,6 +4,11 @@ public class SofaCama implements Sofa, Cama{
     public SofaCama(){
         esSofa = true;
     }
+    // public SofaCama(int numPlazas){
+    //     esSofa = true;
+    //     this.numPlazas = numPlazas;
+    // }
+
     public String sentarse(){
         return "Me siento...";
     }
@@ -20,6 +25,11 @@ public class SofaCama implements Sofa, Cama{
         String salida = "";
         if (!esSofa) salida = "Convierto la cama en sofá.";
         return salida;
+    }
+
+    @Override
+    public String toString(){
+        return "Mi sofá cama tiene " + this.numPlazas + " plazas.";
     }
 
     public static void main(String[] args) {

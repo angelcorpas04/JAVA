@@ -13,7 +13,7 @@ public class Perro extends Mascota{
     }
 
     public String onomatopeyar(){
-        return super.onomatopeyar() + ": Guau! Guau!";
+        return /*super.onomatopeyar() +*/ "Guau! Guau!";
     }
     public String pasear(){
         return "Paseando...";
@@ -30,8 +30,8 @@ public class Perro extends Mascota{
         System.out.println(miPerro.onomatopeyar());
         System.out.println(miPerro.pasear());
 
-        Mascota miMascota = new Mascota();
-        System.out.println(miMascota.onomatopeyar());
+        // Mascota miMascota = new Mascota();
+        // System.out.println(miMascota.onomatopeyar());
         // System.out.println(miMascota.pasear());
     }
 }

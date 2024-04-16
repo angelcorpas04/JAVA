@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class Mascota {
+public abstract class Mascota {
     private String nombre;
     private String microchip;
     // private Persona duenio;
@@ -71,24 +71,23 @@ public class Mascota {
     public String dormir(){
         return "Durmiendo...";
     }
-    public String onomatopeyar(){
-        return "*ruiditos de animales*";
-    }
+    abstract public String onomatopeyar();
 
+    @Override
     public String toString(){
         return "Se llama " + this.nombre + ", nació el " + this.fechaNacimiento + "y su dueño/a es " + this.nombreDuenio + ".";
     }
 
     public static void main(String[] args) {
-        System.out.println("Hola, soy una mascota!");
-        Mascota mascotaPorDefecto = new Mascota();
-        System.out.println(mascotaPorDefecto);
+        // System.out.println("Hola, soy una mascota!");
+        // Mascota mascotaPorDefecto = new Mascota();
+        // System.out.println(mascotaPorDefecto);
 
-        LocalDateTime fecha = LocalDateTime.now();
-        Mascota mascotaParametros = new Mascota("mascota", fecha, "5", "dueño");
-        System.out.println(mascotaParametros);
+        // LocalDateTime fecha = LocalDateTime.now();
+        // Mascota mascotaParametros = new Mascota("mascota", fecha, "5", "dueño");
+        // System.out.println(mascotaParametros);
 
-        System.out.println(mascotaPorDefecto.dormir());
+        // System.out.println(mascotaPorDefecto.dormir());
     }
     
 }
